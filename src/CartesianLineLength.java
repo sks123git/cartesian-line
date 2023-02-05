@@ -36,5 +36,14 @@ public class CartesianLineLength {
             System.out.println("Both lines are not equal");
         }
 
+        // comparing the two line to see which one is small, equal or greater.
+        int result = line1.compareTo(line2);
+        if(result > 0){
+            System.out.println("Line 1 is greater");
+        } else if(result < 0){
+            System.out.println("Line 2 is greater");
+        } else {
+            System.out.println("Both the lines are equal");
+        }
     }
 }
